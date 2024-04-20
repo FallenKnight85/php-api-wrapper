@@ -1,5 +1,5 @@
 {
-  "name": "fallenknight85/custom-php-api-wrapper",
+  "name": "fallenknight85/php-api-wrapper",
   "description": "Work with APIs like with Laravel Eloquent or Doctrine (no longer a dream)",
   "type": "package",
   "authors": [
