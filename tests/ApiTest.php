@@ -8,7 +8,7 @@ use Mockery;
 use PHPUnit\Framework\TestCase;
 use TypeError;
 
-class ApiTest extends TestCase
+final class ApiTest extends TestCase
 {
     protected const ENDPOINTS = ['client', 'catalogue', 'materiel', 'fabricant', 'type', 'tarif', 'caracteristique'];
     protected $token;
@@ -28,7 +28,7 @@ class ApiTest extends TestCase
         return $transport;
     }
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->token = 'token_jwt';
         $this->entrypoint = 'https://exemple/api/';
